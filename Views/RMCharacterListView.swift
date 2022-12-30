@@ -8,7 +8,7 @@
 import UIKit
 
 /// View that handles showing list of chracters
-class CharacterListView: UIView {
+class RMCharacterListView: UIView {
 
     private let viewModel = CharacterListViewModel()
     
@@ -27,7 +27,7 @@ class CharacterListView: UIView {
         collectionView.isHidden = false
         collectionView.alpha = 0
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(RMChracterCollectionViewCell.self, forCellWithReuseIdentifier: RMChracterCollectionViewCell.cellIdentifier)
         
         return collectionView
     }()
