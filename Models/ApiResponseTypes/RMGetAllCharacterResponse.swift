@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RMGetAllCharacterResponse : Codable{
+class RMGetAllCharacterResponse : Codable{
     
     struct Info : Codable{
         let count: Int

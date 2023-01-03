@@ -22,7 +22,7 @@ final class RMCharacterCollectionViewCellViewModel {
     }
     
     public var characterStatusText : String{
-        return characterStatus.rawValue
+        return "Status :\(characterStatus.rawValue)"
     }
     
     public var characterNameText : String{
